@@ -486,9 +486,16 @@ def send_select_preset_request(jwt_token, character_id, pet_id):
 
 
 def decode_jwt(token):
+    token = token.strip()
+    if token.lower().startswith('bearer '):
+        token = token[7:].strip()
+    if token.startswith('"') and token.endswith('"'):
+        token = token[1:-1].strip()
+        
     parts = token.split('.')
     if len(parts) != 3:
-        raise ValueError("Invalid JWT")
+        raise ValueError(f"Invalid JWT format: expected 3 parts, got {len(parts)}. (First 15 chars: {token[:15]}...)")
+        
     payload_b64 = parts[1]
     payload_b64 += '=' * (4 - len(payload_b64) % 4)
     payload_json = base64.b64decode(payload_b64)
