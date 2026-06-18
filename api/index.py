@@ -775,5 +775,12 @@ def auto_change():
 
 
 
+# At the bottom of api/index.py
+from mangum import Mangum
+
+# This is the handler Vercel needs
+handler = Mangum(app)
+
+# Keep this for local development
 if __name__ == '__main__':
     app.run(debug=False, host='0.0.0.0', port=5000)
