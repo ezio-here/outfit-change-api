@@ -1,0 +1,64 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/level/:uid",
+      "destination": "https://level-info.vercel.app/level/:uid"
+    },
+    {
+      "source": "/api/eat",
+      "destination": "https://eat-to-access-drab.vercel.app/Eat"
+    },
+    {
+      "source": "/api/jwt",
+      "destination": "https://enzo-jwt.vercel.app/token"
+    },
+    {
+      "source": "/api/visits",
+      "destination": "https://visit-api-opal-seven.vercel.app/visits"
+    },
+    {
+      "source": "/api/bio",
+      "destination": "https://long-bio-api-enzo.vercel.app/bio_upload"
+    },
+    {
+      "source": "/api/requests",
+      "destination": "https://requests-spam.vercel.app/send_request"
+    },
+    {
+      "source": "/api/duo",
+      "destination": "https://dynamic-checker.vercel.app/duo_info"
+    },
+    {
+      "source": "/api/guild",
+      "destination": "https://guild-info-ten.vercel.app/info"
+    },
+    {
+      "source": "/api/gift_store",
+      "destination": "https://gift-sender-api.vercel.app/api/get_store"
+    },
+    {
+      "source": "/api/gift_send",
+      "destination": "https://gift-sender-api.vercel.app/api/send_gift"
+    },
+    {
+      "source": "/api/gift_image/:id",
+      "destination": "https://gift-sender-api.vercel.app/api/image/:id"
+    },
+    {
+      "source": "/api/vault",
+      "destination": "https://outfit-change-api.vercel.app/api/vault"
+    },
+    {
+      "source": "/api/equip",
+      "destination": "https://outfit-change-api.vercel.app/api/equip"
+    },
+    {
+      "source": "/(info|level|token|visits|bio|requests|duo|guild|gift|outfit)",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/",
+      "destination": "/index.html"
+    }
+  ]
+}
