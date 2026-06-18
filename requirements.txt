@@ -1,4 +1,4 @@
-flask==2.3.3
+Flask==2.3.2
 requests==2.31.0
 pycryptodome==3.19.0
-protobuf==4.24.4
+mangum==0.17.0
