@@ -144,7 +144,7 @@ def fetch_vault_items(jwt_token, retries=2):
         "Accept-Encoding": "deflate, gzip",
         "Authorization": f"Bearer {jwt_token}",
         "X-GA": "v1 1",
-        "ReleaseVersion": "OB53",
+        "ReleaseVersion": "OB54",
         "Content-Type": "application/x-www-form-urlencoded",
         "X-Unity-Version": "2022.3.47f1"
     }
@@ -195,7 +195,7 @@ def fetch_current_outfit(jwt_token, account_id):
         "Accept-Encoding": "gzip, deflate",
         "Content-Type": "application/x-www-form-urlencoded",
         "X-Unity-Version": "2022.3.47f1",
-        "ReleaseVersion": "OB53",
+        "ReleaseVersion": "OB54",
         "X-GA": "v1 1",
         "Authorization": f"Bearer {jwt_token}"
     }
@@ -240,7 +240,7 @@ def send_change_request(jwt_token, character_id, outfit_ids):
         "Accept-Encoding": "gzip, deflate",
         "Content-Type": "application/octet-stream",
         "X-Unity-Version": "2022.3.47f1",
-        "ReleaseVersion": "OB53",
+        "ReleaseVersion": "OB54",
         "X-GA": "v1 1",
         "Authorization": f"Bearer {jwt_token}"
     }
@@ -271,7 +271,7 @@ EMOTE_HEADERS = {
     "Connection": "Keep-Alive",
     "Content-Type": "application/x-www-form-urlencoded",
     "Expect": "100-continue",
-    "ReleaseVersion": "OB53",
+    "ReleaseVersion": "OB54",
     "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 9; G011A Build/PI)",
     "X-GA": "v1 1",
     "X-Unity-Version": "2018.4.11f1",
@@ -359,7 +359,7 @@ def send_weapon_request(jwt_token, encrypted_payload):
         "Accept-Encoding": "gzip, deflate",
         "Content-Type": "application/octet-stream",
         "X-Unity-Version": "2022.3.47f1",
-        "ReleaseVersion": "OB53",
+        "ReleaseVersion": "OB54",
         "X-GA": "v1 1",
         "Authorization": f"Bearer {jwt_token}"
     }
@@ -393,7 +393,7 @@ def send_avatar_request(jwt_token, encrypted_payload):
         "Accept-Encoding": "gzip, deflate",
         "Content-Type": "application/octet-stream",
         "X-Unity-Version": "2022.3.47f1",
-        "ReleaseVersion": "OB53",
+        "ReleaseVersion": "OB54",
         "X-GA": "v1 1",
         "Authorization": f"Bearer {jwt_token}"
     }
@@ -413,7 +413,7 @@ def send_backpack_request(jwt_token, encrypted_payload):
         "Accept-Encoding": "gzip, deflate",
         "Content-Type": "application/octet-stream",
         "X-Unity-Version": "2022.3.47f1",
-        "ReleaseVersion": "OB53",
+        "ReleaseVersion": "OB54",
         "X-GA": "v1 1",
         "Authorization": f"Bearer {jwt_token}"
     }
@@ -474,7 +474,7 @@ def send_select_preset_request(jwt_token, character_id, pet_id):
         "Accept-Encoding": "gzip, deflate",
         "Content-Type": "application/x-www-form-urlencoded",
         "X-Unity-Version": "2022.3.47f1",
-        "ReleaseVersion": "OB53",
+        "ReleaseVersion": "OB54",
         "X-GA": "v1 1",
         "Authorization": f"Bearer {jwt_token}"
     }
